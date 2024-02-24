@@ -4,30 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png">
+  <link rel="shortcut icon" type="image/svg+xml" href="img/favicon/favicon.svg">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <title>ПРО КИНО - Аватар: Легенда об Аанге</title>
 </head>
-<style>
-  body {
-    background-color: #333;
-  }
-</style>
 
 <body>
   <header class="header">
     <div class="container header__container">
       <img class="header__logo" src="img/header/logo.svg" alt="Логотип ПРО КИНО">
-      <a class="header__link" id="#trailer" href="#">Смотреть трейлер</a>
+      <a class="header__link" href="#trailer">Смотреть трейлер</a>
     </div>
   </header>
 
   <main class="page">
     <section class="hero">
-      <div class="container">
+      <div class="container hero__container">
+        <h1 class="visually-hidden">Сериал от Netflix - Аватар: Легенда об Аанге - выход 22 февраля</h1>
         <img class="hero__banner" src="img/hero/banner.png" alt="Avatar the last airbender">
         <p class="hero__date">
           <time datetime="2024-02-22">22 февраля</time>
         </p>
-        <a href="#about" class="hero__arrow">
+        <a class="hero__arrow" href="#about">
           <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="32" cy="32" r="31.5" stroke="white" />
             <path
@@ -42,20 +42,31 @@
     <section class="about" id="about">
       <div class="container about__container">
         <div class="about__content">
-          <h2 class="about__title">Аватар: Легенда об Аанге</h2>
+          <h2 class="about__title">Аватар: Легенда об&nbsp;Аанге</h2>
           <p class="about__descr">
-            Сюжет рассказывает о мальчике из племени воздушных кочевников, Аанге, способном покорять стихию воздуха.
-            В возрасте 11 лет, он узнал, что он Аватар — властелин четырёх стихий. Мир погряз в многолетней войне нации
-            Огня против остального мира, в котором определённые люди способны покорять одну из четырёх стихий — воду,
-            землю, огонь или воздух. Аанг — единственный, кто способен покорить все элементы и будучи Аватаром,
-            он должен спасти мир от уничтожения нацией Огня. Со своими новыми друзьями, Катарой и Соккой, Аанг
-            отправляется овладевать стихиями, попутно их преследует изгнанный принц нации Огня — Зуко, который хочет
+            Сюжет рассказывает о&nbsp;мальчике из&nbsp;племени воздушных кочевников, Аанге, способном покорять стихию
+            воздуха.
+            В&nbsp;возрасте 11&nbsp;лет, он&nbsp;узнал, что он&nbsp;Аватар&nbsp;&mdash; властелин четырёх стихий. Мир
+            погряз в&nbsp;многолетней войне нации
+            Огня против остального мира, в&nbsp;котором определённые люди способны покорять одну из&nbsp;четырёх
+            стихий&nbsp;&mdash; воду,
+            землю, огонь или воздух. Аанг&nbsp;&mdash; единственный, кто способен покорить все элементы и&nbsp;будучи
+            Аватаром,
+            он&nbsp;должен спасти мир от&nbsp;уничтожения нацией Огня. Со&nbsp;своими новыми друзьями, Катарой
+            и&nbsp;Соккой, Аанг
+            отправляется овладевать стихиями, попутно их&nbsp;преследует изгнанный принц нации Огня&nbsp;&mdash; Зуко,
+            который хочет
             вернуть себе честь, поймав Аватара.
           </p>
         </div>
-        <div class="about__img">
-          <img src="img/about/about-img.jpg" alt="Аанг сотит на голове рогатого животного" width="530" height="410">
-        </div>
+
+        <picture class="about__pic">
+          <source srcset="img/about/aang320.jpg" media="(max-width: 320px)">
+          <source srcset="img/about/aang768.jpg" media="(max-width: 768px)">
+          <source srcset="img/about/aang1024.jpg" media="(max-width: 1024px)">
+          <img class="about__img" src="img/about/aang.jpg" alt="Аанг сотит на голове рогатого животного Аппе"
+            width="530" height="410">
+        </picture>
       </div>
     </section>
 
@@ -77,20 +88,20 @@
         <ul class="trailer_list">
           <li class="trailer__item">
             <div class="trailer__wrapper">
-              <iframe src="https://www.youtube.com/embed/ByAn8DF8Ykk" title="YouTube video player"
-                frameborder="0"></iframe>
+              <iframe class="trailer__video" src="https://www.youtube.com/embed/ByAn8DF8Ykk"
+                title="YouTube video player" frameborder="0"></iframe>
             </div>
           </li>
           <li class="trailer__item">
             <div class="trailer__wrapper">
-              <iframe src="https://www.youtube.com/embed/ByAn8DF8Ykk" title="YouTube video player"
-                frameborder="0"></iframe>
+              <iframe class="trailer__video" src="https://www.youtube.com/embed/ByAn8DF8Ykk"
+                title="YouTube video player" frameborder="0"></iframe>
             </div>
           </li>
           <li class="trailer__item">
             <div class="trailer__wrapper">
-              <iframe src="https://www.youtube.com/embed/ByAn8DF8Ykk" title="YouTube video player"
-                frameborder="0"></iframe>
+              <iframe class="trailer__video" src="https://www.youtube.com/embed/ByAn8DF8Ykk"
+                title="YouTube video player" frameborder="0"></iframe>
             </div>
           </li>
         </ul>
@@ -99,7 +110,7 @@
   </main>
 
   <footer class="footer">
-    <div class="container">
+    <div class="container footer_container">
       <ul class="footer__developers">
         <li class="footer__developer">Designer:
           <a class="footer__link" href="#">Anastasia Ilina</a>
@@ -110,7 +121,7 @@
       </ul>
 
       <p class="footer__copyright">
-        <small>© ПРОКИНО, 2024</small>
+        <small>&copy;&nbsp;ПРОКИНО, 2024</small>
       </p>
 
       <img class="gooter__logo" src="img/header/logo.svg" alt="Логотип ПРО КИНО">
